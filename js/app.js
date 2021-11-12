@@ -7,7 +7,7 @@ var player = {
     is_playing: true
 };
 console.log(`Player Name: ${player.name} Player Number: ${player.number} Playing: ${player.is_playing}`);
-
+// An Array of objects, with an array as one of the key's value
 var players = [{
     name: "Mick Jones",
     number: 88,
@@ -47,7 +47,7 @@ console.log(`Player Name: ${players[2].name} Player Number: ${players[2].number}
 console.log(`Player Name: ${players[4].name} Player Number: ${players[4].number} Playing: ${players[4].is_playing}`);
 console.log(`Player Name: ${players[0].name} Player Number: ${players[0].number} Playing: ${players[0].is_playing} First All Star Year: ${players[0].all_star_years[0]}`);
 
-
+// Various If statments written out painfully without using LOOPS
 if (players[0].is_playing) {
     console.log(players[0].name)
 }
@@ -57,7 +57,7 @@ if (players[2].all_star_years.length > 2) {
 } else {
     console.log(`Not Repeat All Star`);
 }
-
+// These IF statements just go over each players number and according to what numbers are on the team youll get a different message.
 if (players[0].number < 10 || players[1].number < 10 || players[2].number < 10 || players[3].number < 10 || players[4].number < 10) {
     console.log(`At least one small number`);
 } else if (players[0].number < 20 || players[1].number < 20 || players[2].number < 20 || players[3].number < 20 || players[4].number < 20) {
@@ -65,7 +65,7 @@ if (players[0].number < 10 || players[1].number < 10 || players[2].number < 10 |
 } else {
     console.log(`All Large Numbers`);
 }
-
+// Same as above but instead with number of goals. Very self explanitory if read.
 if (players[0].number_of_goals < 10 || players[1].number_of_goals < 10 || players[2].number_of_goals < 10 || players[3].number_of_goals < 10 || players[4].number_of_goals < 10) {
     console.log(`At least one small number`);
 } else if (players[0].number_of_goals < 20 || players[1].number_of_goals < 20 || players[2].number_of_goals < 20 || players[3].number_of_goals < 20 || players[4].number_of_goals < 20) {
